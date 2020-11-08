@@ -16,6 +16,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),lmi)
+ifneq ($(filter lmi,$(TARGET_DEVICE)),)
 
 endif
